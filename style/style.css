@@ -1,0 +1,488 @@
+@charset "UTF-8";
+.titulo-cards, main .section-cards-disciplinas .disciplinas-cards .jazz .titulo-card, main .section-cards-disciplinas .disciplinas-cards .stretching .titulo-card, main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos .titulo-card, main .section-cards-disciplinas .disciplinas-cards .español .titulo-card, main .section-cards-disciplinas .disciplinas-cards .clasico .titulo-card, main .section-cards-disciplinas .disciplinas-cards .tango .titulo-card {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ff4500;
+  text-shadow: 4px -2px 6px rgba(5, 2, 1, 0.86);
+}
+
+.button-cards, main .section-cards-disciplinas .disciplinas-cards .jazz button, main .section-cards-disciplinas .disciplinas-cards .stretching button, main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos button, main .section-cards-disciplinas .disciplinas-cards .español button, main .section-cards-disciplinas .disciplinas-cards .clasico button, main .section-cards-disciplinas .disciplinas-cards .tango button {
+  background-color: #ff4500;
+  border-color: #ff4500;
+  width: 10rem;
+  font-size: 2rem;
+  border-radius: 0.7rem;
+  box-shadow: 5px 2px 7px 5px rgba(0, 0, 0, 0.49);
+}
+
+.button-hover, main .section-cards-disciplinas .disciplinas-cards .jazz button:hover, main .section-cards-disciplinas .disciplinas-cards .stretching button:hover, main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos button:hover, main .section-cards-disciplinas .disciplinas-cards .español button:hover, main .section-cards-disciplinas .disciplinas-cards .clasico button:hover, main .section-cards-disciplinas .disciplinas-cards .tango button:hover {
+  background-color: white;
+  color: #ff4500;
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  display: flex;
+}
+header .navbar1 {
+  width: 100%;
+  height: 11rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  font-size: 2.1rem;
+  transition: 0.5s;
+  font-weight: bold;
+  text-shadow: 4px -2px 6px rgba(5, 2, 1, 0.86);
+  z-index: 1000;
+}
+header .navbar1 .logo {
+  text-decoration: none;
+  color: whitesmoke;
+}
+header .navbar1 .logo img {
+  width: 10rem;
+}
+header .navbar1 nav {
+  display: flex;
+  justify-content: center;
+}
+header .navbar1 nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+header .navbar1 nav ul li {
+  margin-left: 2rem;
+}
+header .navbar1 nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+header .navbar1 nav ul li a:hover {
+  color: #ff4500;
+}
+header .navbar1 .icon-header {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+}
+header .navbar1 .icon-header a {
+  color: whitesmoke;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+header .navbar1 .icon-header a:hover {
+  color: #ff4500;
+}
+
+.main-contacto {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../assets/fondoContacto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+.main-contacto form {
+  width: 75vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(245, 245, 245, 0.74);
+  border-radius: 2rem;
+}
+.main-contacto form h1 {
+  text-align: center;
+  text-shadow: 4px -2px 6px rgba(248, 248, 248, 0.86);
+}
+.main-contacto form .formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  margin: 0 auto;
+  margin-top: 2rem;
+  color: #ff4500;
+}
+.main-contacto form .formulario-contacto label {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.main-contacto form .formulario-contacto input {
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 0.8rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.main-contacto form .formulario-contacto textarea {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: gray;
+}
+.main-contacto form button {
+  width: 20rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  margin: 5rem auto 0;
+  font-size: 1.5rem;
+  background-color: #ff4500;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.main-contacto form button:hover {
+  color: #ff4500;
+  background-color: whitesmoke;
+  font-weight: bold;
+  border-color: #ff4500;
+}
+
+main .titulo-academia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+main .titulo-academia h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin: 2rem;
+  font-style: italic;
+  color: orangered;
+}
+main .titulo-academia img {
+  width: 20rem;
+}
+main .nosotos-academia {
+  text-align: center;
+}
+main .nosotos-academia h3 {
+  font-size: 2.2rem;
+}
+main .nosotos-academia p {
+  font-size: 1.8rem;
+  text-align: justify;
+  width: 90%;
+  margin: 2rem auto;
+}
+main .galeria-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+main .galeria-img img {
+  margin: 1.2rem;
+  box-shadow: 5px 2px 7px 5px rgba(0, 0, 0, 0.89);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.header-index {
+  width: 100%;
+  height: 80rem;
+  background-image: url(../img/centrales/IMG_4763.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.header-index .navbar1 {
+  position: fixed;
+  width: 100%;
+  height: 11rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  font-size: 2.1rem;
+  transition: 0.5s;
+  font-weight: bold;
+  text-shadow: 4px -2px 6px rgba(5, 2, 1, 0.86);
+  z-index: 1000;
+}
+.header-index .navbar1 .logo {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.header-index .navbar1 .logo img {
+  width: 10rem;
+}
+.header-index .navbar1 nav {
+  display: flex;
+  justify-content: center;
+}
+.header-index .navbar1 nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.header-index .navbar1 nav ul li {
+  margin-left: 2rem;
+}
+.header-index .navbar1 nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.header-index .navbar1 nav ul li a:hover {
+  color: #ff4500;
+}
+.header-index .navbar1 .icon-header {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+}
+.header-index .navbar1 .icon-header a {
+  color: whitesmoke;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.header-index .navbar1 .icon-header a:hover {
+  color: #ff4500;
+}
+.header-index .texto-bienvenida {
+  z-index: 100;
+  margin: auto;
+  color: whitesmoke;
+  text-shadow: 4px -2px 6px rgba(5, 2, 1, 0.86);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-index .texto-bienvenida h1 {
+  font-size: 6rem;
+}
+.header-index .texto-bienvenida h2 {
+  font-size: 3rem;
+}
+
+main {
+  width: 100%;
+}
+main .section-presentacion {
+  display: flex;
+  margin: 10rem;
+  text-align: center;
+  justify-content: center;
+}
+main .section-presentacion .foto-presentacion {
+  width: 40rem;
+  border-radius: 2rem;
+  box-shadow: 5px 2px 7px 5px rgba(0, 0, 0, 0.89);
+}
+main .section-presentacion .section-presentacion-texto img {
+  width: 25rem;
+}
+main .section-presentacion .section-presentacion-texto h2 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 3rem;
+}
+main .section-presentacion .section-presentacion-texto p {
+  font-size: 2rem;
+  padding: 3rem;
+}
+main .section-cards-disciplinas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rem;
+  background-image: url(../assets/fondonaranja.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .section-cards-disciplinas .disciplinas-titulo {
+  font-size: 4rem;
+  font-weight: bold;
+  color: whitesmoke;
+  text-shadow: 4px -2px 6px rgba(5, 2, 1, 0.86);
+  text-align: center;
+  margin-top: 5rem;
+}
+main .section-cards-disciplinas .disciplinas-cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+main .section-cards-disciplinas .disciplinas-cards .cards {
+  border: 1px solid black;
+  width: 40rem;
+  height: 40rem;
+  margin: 5rem;
+  border-radius: 2rem;
+  box-shadow: 5px 2px 7px 5px rgba(0, 0, 0, 0.49);
+}
+main .section-cards-disciplinas .disciplinas-cards .tango {
+  background-image: url(../img/z1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+main .section-cards-disciplinas .disciplinas-cards .clasico {
+  background-image: url(../img/a1.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+main .section-cards-disciplinas .disciplinas-cards .español {
+  background-image: url(../img/t1.jpg;);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos {
+  background-image: url(../img/t1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos .titulo-card {
+  font-size: 3.5rem;
+}
+main .section-cards-disciplinas .disciplinas-cards .stretching {
+  background-image: url(../assets/stretching.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+main .section-cards-disciplinas .disciplinas-cards .jazz {
+  background-image: url(../assets/danzajazz.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+footer .mapa-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+footer .mapa-footer .icons-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .mapa-footer .icons-footer a {
+  color: whitesmoke;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+footer .mapa-footer .icons-footer a:hover {
+  color: #ff4500;
+}
+footer .mapa-footer a img {
+  width: 20rem;
+}
+footer .mapa-footer .footer-mapa ul {
+  list-style: none;
+}
+footer .mapa-footer .footer-mapa ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 2.1rem;
+}
+footer .mapa-footer .footer-mapa ul li a:hover {
+  color: #ff4500;
+}
+footer .copy {
+  margin-top: 2rem;
+  text-align: center;
+}
+footer .copy p {
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.lumbreTips {
+  display: flex;
+  justify-content: center;
+}
+.lumbreTips ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lumbreTips ul li {
+  margin: 4rem;
+  width: 50rem;
+}
+
+.main__sobreNosotros h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem;
+}
+.main__sobreNosotros h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem;
+}
+.main__sobreNosotros p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+}/*# sourceMappingURL=style.css.map */

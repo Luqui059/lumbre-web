@@ -1,0 +1,123 @@
+header{
+    width: 100%;
+    display: flex;
+    .navbar1{
+        width: 100%;
+        height: 11rem;
+        background-color:black;
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+        font-size: $font-big;
+        transition: .5s;
+        font-weight: bold;
+        text-shadow: 4px -2px 6px rgba(5,2,1,0.86);
+        z-index: 1000;
+        .logo{
+            text-decoration: none;
+            color: $color-secondary;
+            img{
+                width:10rem;
+            }
+        }
+        nav{
+            display: flex;
+            justify-content:center;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                list-style: none;
+                li{
+                    margin-left:2rem;
+                    a{
+                        color: $color-secondary;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        color: $color-hover;
+                    }
+                }
+            }
+        }
+        .icon-header{
+            display: flex;
+            align-items: center;
+            width: 10rem;
+            a{
+                color: $color-secondary;
+                margin-left: 1rem;
+                text-decoration: none;
+            }
+            a:hover{
+                color: $color-hover;
+            }
+        }
+    }
+}
+.main-contacto{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../assets/fondoContacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    form{
+        width: 75vh;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(245, 245, 245, 0.74);
+        border-radius: 2rem;
+        h1{
+            text-align: center;
+            text-shadow: 4px -2px 6px rgba(248, 248, 248, 0.86);
+        }
+        .formulario-contacto{
+            display: flex;
+            flex-direction: column;
+            width: 50vh;
+            margin: 0 auto;
+            margin-top: 2rem;
+            color: $color-hover;
+            label{
+                font-size: $font-md;
+                font-weight: bold;
+            }
+            input{
+                height: 3rem;
+                font-size: $font-sm;
+                border-radius: 0.8rem;
+                border: 1px solid gray;
+                padding: 1rem;
+                margin: 1rem 0;
+            }
+            textarea{
+                font-size: $font-sm;
+                padding: 1rem;
+                border-radius: 1rem;
+                color: gray;
+            }
+        }
+        button{
+            width: 20rem;
+            padding: 1rem;
+            border: 1px solid transparent;
+            border-radius: 1rem;
+            margin: 5rem auto 0;
+            font-size: $font-sm;
+            background-color: $color-hover;
+            color: $color-secondary;
+            font-weight: bold;
+        }
+        button:hover{
+            color:$color-hover;
+            background-color:$color-secondary;
+            font-weight: bold;
+            border-color: $color-hover;
+        }
+
+    }
+}

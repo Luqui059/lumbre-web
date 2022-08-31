@@ -1,0 +1,362 @@
+@import "variables";
+@import "contacto";
+@import "academia";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size:62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: $color-secondary;
+}
+.header-index{
+    width: 100%;
+    height: 80rem;
+    background-image: url(../img/centrales/IMG_4763.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    .navbar1{
+        position:fixed;
+        width: 100%;
+        height: 11rem;
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+        font-size: $font-big;
+        transition: .5s;
+        font-weight: bold;
+        text-shadow: 4px -2px 6px rgba(5,2,1,0.86);
+        z-index: 1000;
+        .logo{
+            text-decoration: none;
+            color: $color-secondary;
+            img{
+                width:10rem;
+            }
+        }
+        nav{
+            display: flex;
+            justify-content:center;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                list-style: none;
+                li{
+                    margin-left:2rem;
+                    a{
+                        color: $color-secondary;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        color: $color-hover;
+                    }
+                }
+            }
+        }
+        .icon-header{
+            display: flex;
+            align-items: center;
+            width: 10rem;
+            a{
+                color: $color-secondary;
+                margin-left: 1rem;
+                text-decoration: none;
+            }
+            a:hover{
+                color: $color-hover;
+            }
+        }
+    }
+    .texto-bienvenida{
+        z-index: 100;
+        margin: auto;
+        color: $color-secondary;
+        text-shadow:4px -2px 6px rgba(5,2,1,0.86);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            font-size: 6rem;
+        }
+        h2{
+            font-size: 3rem;   
+        }
+    }
+}
+main{
+    width: 100%;
+    .section-presentacion{
+        display: flex;
+        margin: 10rem;
+        text-align: center;
+        justify-content: center;
+        .foto-presentacion{
+            width: 40rem;
+            border-radius: 2rem;
+            box-shadow: 5px 2px 7px 5px rgba(0,0,0,0.89);
+        }
+        .section-presentacion-texto{
+            img{
+                width: 25rem;
+            }
+            h2{
+                font-size: 4rem;
+                text-align: center;
+                padding: 3rem;
+            }
+            p{
+                font-size: 2rem;
+                padding: 3rem;
+            }
+        }
+    }
+    .section-cards-disciplinas{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top:15rem;
+        background-image: url(../assets/fondonaranja.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .disciplinas-titulo{
+            font-size:4rem;
+            font-weight:bold;
+            color:$color-secondary;
+            text-shadow:4px -2px 6px rgba(5,2,1,0.86);
+            text-align: center;
+            margin-top: 5rem;
+        }
+        .disciplinas-cards{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            .cards{
+                border: 1px solid black;
+                width: 40rem;
+                height: 40rem;
+                margin: 5rem;
+                border-radius:2rem;
+                box-shadow: 5px 2px 7px 5px rgba(0,0,0,0.49);
+                }
+            .tango{
+                background-image: url(../img/z1.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:space-between;
+                padding: 4rem;
+                .titulo-card{
+                    @extend .titulo-cards;
+                }
+                button{
+                    @extend .button-cards;
+                }
+                button:hover{
+                    @extend .button-hover;
+                }
+            }
+            .clasico{
+                background-image: url(../img/a1.jpg);
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:space-between;
+                padding: 4rem;
+                .titulo-card{
+                    @extend .titulo-cards;
+                }
+                button{
+                    @extend .button-cards;
+                }
+                button:hover{
+                    @extend .button-hover;
+                }
+            }
+            .español{
+                background-image: url(../img/t1.jpg;);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:space-between;
+                padding: 4rem;
+                .titulo-card{
+                    @extend .titulo-cards;
+                }
+                button{
+                    @extend .button-cards;
+                }
+                button:hover{
+                    @extend .button-hover;
+                }
+            }
+            .ritmosLatinos{
+                background-image: url(../img/t1.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:space-between;
+                padding: 4rem;
+                .titulo-card{
+                    @extend .titulo-cards;
+                    font-size: 3.5rem;
+                }
+                button{
+                    @extend .button-cards;
+                }
+                button:hover{
+                    @extend .button-hover;
+                }
+            }
+            .stretching{
+                background-image: url(../assets/stretching.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:space-between;
+                padding: 4rem;
+                .titulo-card{
+                    @extend .titulo-cards;
+                }
+                button{
+                    @extend .button-cards;
+                }
+                button:hover{
+                    @extend .button-hover;
+                }
+            }
+            .jazz{
+                background-image: url(../assets/danzajazz.jpg);
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:space-between;
+                padding: 4rem;
+                .titulo-card{
+                    @extend .titulo-cards;
+                }
+                button{
+                    @extend .button-cards;
+                }
+                button:hover{
+                    @extend .button-hover;
+                }
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    .mapa-footer{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        margin-top: 5rem;
+        .icons-footer{
+            display: flex;
+            align-items: center;
+            flex-direction:column;
+            a{
+                color: $color-secondary;
+                margin-left: 1rem;
+                text-decoration: none;
+                font-size: 2.5rem;
+            }
+            a:hover{
+                color: $color-hover;
+            }
+        }
+        a{
+            img{
+                width: 20rem;
+            }
+        }
+        .footer-mapa{
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color:$color-secondary;
+                        font-size: $font-big;
+                    }
+                    a:hover{
+                        color: $color-hover;
+                    }
+                }
+            }
+        }
+    }
+    .copy{
+        margin-top: 2rem;
+        text-align: center;
+        p{
+            font-size: $font-sm;
+            color: $color-secondary;
+        }
+    }
+}
+.lumbreTips{
+    display:flex;
+    justify-content: center;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            margin: 4rem;
+            width: 50rem;
+        }
+    }
+
+}
+
+.main__sobreNosotros{
+    h1{
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 2rem;
+    }
+    h2{
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 2rem;
+    }
+    p{
+        font-size: 2rem;
+        text-align: center;
+        margin: 2rem;
+    }
+}

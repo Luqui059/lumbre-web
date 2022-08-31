@@ -1,0 +1,41 @@
+main{
+    .titulo-academia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        h1{
+            font-size:5rem;
+            text-align: center;
+            margin: 2rem;
+            font-style: italic;
+            color:orangered; 
+        }
+        img{
+            width: 20rem;
+        }
+    }
+    .nosotos-academia{
+        text-align: center;
+        h3{
+            font-size:2.2rem;
+        }
+        p{
+            font-size:1.8rem;
+            text-align: justify;
+            width: 90%;
+            margin: 2rem auto;
+        }
+    }
+    .galeria-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        img{
+            margin: 1.2rem;
+            box-shadow: 5px 2px 7px 5px rgba(0,0,0,0.89);
+        }
+    }
+}
